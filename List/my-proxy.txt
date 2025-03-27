@@ -1,1 +1,3 @@
 DOMAIN-SUFFIX,nsloon.app
+DOMAIN-SUFFIX,v2ny.com
+DOMAIN-SUFFIX,cloudfisher.net
