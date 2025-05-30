@@ -6,3 +6,4 @@ DOMAIN-SUFFIX,hhan.club
 DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,audiences.me
 DOMAIN-SUFFIX,brew.sh
+DOMAIN-SUFFIX,docker.io
