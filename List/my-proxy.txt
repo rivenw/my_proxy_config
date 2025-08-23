@@ -11,3 +11,6 @@ DOMAIN-SUFFIX,chakra-ui.com
 DOMAIN-SUFFIX,mchost.guru
 DOMAIN,api.themoviedb.org
 DOMAIN-KEYWORD,bugutv
+DOMAIN-SUFFIX,bthdtv.com
+DOMAIN-SUFFIX,hdbthd.com
+DOMAIN-KEYWORD,btsearch
