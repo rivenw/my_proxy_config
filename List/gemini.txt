@@ -1,4 +1,8 @@
+# ==============================================
+# Google AI & Gemini (网页端与基础服务)
+# ==============================================
 DOMAIN,ai.google.dev
+DOMAIN,aistudio.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,makersuite.google.com
 DOMAIN-SUFFIX,bard.google.com
@@ -6,8 +10,37 @@ DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+
+# ==============================================
+# VS Code Google Assistant (Gemini Code Assist)
+# 核心依赖：IDE 插件通常走 Google Cloud API
+# ==============================================
+DOMAIN,cloudaicompanion.googleapis.com
+DOMAIN,cloudsupport.googleapis.com
+DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,cloud.google.com
+DOMAIN-SUFFIX,console.cloud.google.com
+
+# ==============================================
+# 关键 API 与 基础设施 (地区检测重灾区)
+# 注意：generativelanguage 是 API 调用核心
+# ==============================================
+DOMAIN,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,app-measurement.com
+
+# ==============================================
+# 身份认证 (Google 可能会在此处通过 IP 锁区)
+# ==============================================
+DOMAIN-SUFFIX,accounts.google.com
+DOMAIN-SUFFIX,myaccount.google.com
+
+# ==============================================
+# Colab & 开发工具 (你原有的 Keywords)
+# ==============================================
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
