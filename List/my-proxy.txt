@@ -14,3 +14,4 @@ DOMAIN-KEYWORD,bugutv
 DOMAIN-SUFFIX,bthdtv.com
 DOMAIN-SUFFIX,hdbthd.com
 DOMAIN-KEYWORD,btsearch
+DOMAIN-SUFFIX,shadcn.com
