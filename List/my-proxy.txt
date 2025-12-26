@@ -17,3 +17,4 @@ DOMAIN-KEYWORD,btsearch
 DOMAIN-SUFFIX,shadcn.com
 DOMAIN-SUFFIX,bbhdtv.com
 DOMAIN-SUFFIX,bbebbb.com
+DOMAIN-SUFFIX,bbegge.com
