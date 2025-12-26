@@ -15,3 +15,5 @@ DOMAIN-SUFFIX,bthdtv.com
 DOMAIN-SUFFIX,hdbthd.com
 DOMAIN-KEYWORD,btsearch
 DOMAIN-SUFFIX,shadcn.com
+DOMAIN-SUFFIX,bbhdtv.com
+DOMAIN-SUFFIX,bbebbb.com
