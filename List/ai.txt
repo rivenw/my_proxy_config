@@ -1,16 +1,30 @@
-# $ meta_title Sukka's Ruleset - AIGC Domains
-# $ meta_description This file contains domains of OpenAI, Claude.
+# $ meta_title Sukka's Ruleset - AIGC Domains (Global)
+# $ meta_description This file contains global AIGC domains. Domestic/Chinese AI services have been removed.
 
 # >> OpenAI / ChatGPT
 # OpenAI A/B Flag, no geo blocking
 # DOMAIN,api.statsig.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,oaigc.com
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,ai.com
 DOMAIN-KEYWORD,openai
+# API Endpoints
+DOMAIN,api.openai.com
+DOMAIN,api.sora.com
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN,ab.chatgpt.com
+DOMAIN,o33249.ingest.us.sentry.io
+# Authentication
+DOMAIN,auth.openai.com
+DOMAIN,auth0.openai.com
+DOMAIN,platform.openai.com
+DOMAIN-SUFFIX,identrust.com
+DOMAIN,challenges.cloudflare.com
 # DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 # DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 # DOMAIN,openaicomproductionae4b.blob.core.windows.net
@@ -23,19 +37,34 @@ DOMAIN-KEYWORD,openai
 # Apple services like Map, Compass, Weather, etc. Therefore, we can't really include everything
 # in this general "ai.conf" here.
 
-# >> Perplexity
-DOMAIN-SUFFIX,perplexity.ai
-
-# >> Claude
+# >> Claude / Anthropic
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
+# User Content (Artifacts, Attachments)
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,anthropicusercontent.com
+# API Endpoints
+DOMAIN,api.anthropic.com
+DOMAIN,api.claude.ai
+DOMAIN,api.claude.com
+DOMAIN,api-cf.anthropic.com
+DOMAIN,sdk.anthropic.com
+DOMAIN,console.anthropic.com
+
+# >> Perplexity
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,pplx.ai
+DOMAIN,www.perplexity.ai
+DOMAIN,api.perplexity.ai
+DOMAIN,lab-api.perplexity.ai
 
 # >> Google
 # Gemini
 DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,gemini.usercontent.google.com
 DOMAIN,aisandbox-pa.googleapis.com
 DOMAIN,robinfrontend-pa.googleapis.com
 # DeepMind
@@ -65,40 +94,259 @@ DOMAIN,antigravity.google
 DOMAIN,antigravity-unleash.goog
 DOMAIN,daily-cloudcode-pa.googleapis.com
 
+# >> Microsoft Copilot
+DOMAIN-SUFFIX,copilot.microsoft.com
+
+# >> GitHub Copilot
+# api.*.githubcopilot.com is not required, since the ip & asn information are coming from api.github.com
+DOMAIN,api.github.com
+DOMAIN-SUFFIX,copilot-proxy.githubusercontent.com
+DOMAIN,default.exp-tas.com
+DOMAIN,api.githubcopilot.com
+DOMAIN,api.individual.githubcopilot.com
+DOMAIN,api.business.githubcopilot.com
+DOMAIN,api.enterprise.githubcopilot.com
+DOMAIN,copilot-telemetry.githubusercontent.com
+
+# >> Cursor (AI Code Editor)
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+DOMAIN,api.cursor.com
+DOMAIN,api.cursor.sh
+DOMAIN,api2.cursor.com
+DOMAIN,www.cursor.com
+
+# >> Codeium / Windsurf
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,codeiumdata.com
+DOMAIN-SUFFIX,windsurf.com
+DOMAIN,api.codeium.com
+DOMAIN,server.codeium.com
+
 # >> POE
 DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,poe-api.com
+DOMAIN,api.poe.com
 
 # >> Meta AI
 DOMAIN-SUFFIX,meta.ai
+DOMAIN,api.meta.ai
 
 # >> Cloudflare AI Gateway
 DOMAIN,gateway.ai.cloudflare.com
-
-# >> Dify.AI
-DOMAIN-SUFFIX,dify.ai
+DOMAIN,workers.cloudflare.com
+DOMAIN-SUFFIX,workers.dev
 
 # >> Jasper
 DOMAIN-SUFFIX,clipdrop.co
 DOMAIN-SUFFIX,jasper.ai
+DOMAIN,api.jasper.ai
 
 # >> OpenArt
 DOMAIN-SUFFIX,openart.ai
-
-# >> GitHub Copilot
-# api.*.githubcopilot.com is not required, since the ip & asn information are coming from api.github.com
-# see https://github.com/SukkaW/Surge/pull/46#discussion_r1849641627
-DOMAIN,api.github.com
+DOMAIN,api.openart.ai
 
 # >> Grok
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,assets.grok.com
+DOMAIN,api.x.ai
+DOMAIN,api.grok.com
 
 # >> groq
 DOMAIN-SUFFIX,groq.com
+DOMAIN,api.groq.com
+DOMAIN,console.groq.com
 
 # >> JetBrains AI
 DOMAIN,api.jetbrains.ai
 
 # >> OpenRouter AI - Unified Relay
-# see https://github.com/SukkaW/Surge/pull/86 for reason that only root domain get proxied
 DOMAIN,openrouter.ai
+DOMAIN,api.openrouter.ai
+
+# >> Replicate
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,replicate.delivery
+DOMAIN,api.replicate.com
+
+# >> Hugging Face
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.co
+DOMAIN,api.huggingface.co
+DOMAIN,huggingface.github.io
+
+# >> Cohere
+DOMAIN-SUFFIX,cohere.com
+DOMAIN-SUFFIX,cohere.ai
+DOMAIN,api.cohere.com
+DOMAIN,api.cohere.ai
+DOMAIN,os.cohere.com
+
+# >> Mistral AI
+DOMAIN-SUFFIX,mistral.ai
+DOMAIN,api.mistral.ai
+DOMAIN,console.mistral.ai
+DOMAIN,auth.mistral.ai
+
+# >> Character.AI
+DOMAIN-SUFFIX,character.ai
+DOMAIN-SUFFIX,c.ai
+DOMAIN,api.character.ai
+DOMAIN,beta.character.ai
+
+# >> Midjourney
+DOMAIN-SUFFIX,midjourney.com
+DOMAIN-SUFFIX,cdn.midjourney.com
+DOMAIN,www.midjourney.com
+DOMAIN,api.midjourney.com
+
+# >> Runway
+DOMAIN-SUFFIX,runwayml.com
+DOMAIN,api.runwayml.com
+DOMAIN,api.old.runwayml.com
+
+# >> Luma AI (Dream Machine)
+DOMAIN-SUFFIX,lumalabs.ai
+
+# >> Ideogram
+DOMAIN-SUFFIX,ideogram.ai
+
+# >> Black Forest Labs (Flux)
+DOMAIN-SUFFIX,blackforestlabs.ai
+
+# >> ElevenLabs
+DOMAIN-SUFFIX,elevenlabs.io
+DOMAIN,api.elevenlabs.io
+DOMAIN,elevenlabs.io
+
+# >> Suno (AI Music)
+DOMAIN-SUFFIX,suno.com
+DOMAIN-SUFFIX,suno.ai
+DOMAIN,api.suno.ai
+DOMAIN,clerk.suno.com
+
+# >> Udio (AI Music)
+DOMAIN-SUFFIX,udio.com
+DOMAIN,www.udio.com
+DOMAIN,api.udio.com
+
+# >> You.com
+DOMAIN-SUFFIX,you.com
+DOMAIN,api.you.com
+
+# >> Phind (AI Search for Developers)
+DOMAIN-SUFFIX,phind.com
+DOMAIN,www.phind.com
+
+# >> Cognition (Devin)
+DOMAIN-SUFFIX,cognition.ai
+DOMAIN-SUFFIX,devin.ai
+
+# >> Amazon CodeWhisperer / Amazon Q
+DOMAIN-SUFFIX,aws.amazon.com
+DOMAIN,prod.assets.shortbread.aws.dev
+DOMAIN,codewhisperer.us-east-1.amazonaws.com
+DOMAIN,codewhisperer.us-west-2.amazonaws.com
+DOMAIN,q.us-east-1.amazonaws.com
+
+# >> Civitai (AI Model Community)
+DOMAIN-SUFFIX,civitai.com
+DOMAIN,api.civitai.com
+
+# >> Leonardo.ai
+DOMAIN-SUFFIX,leonardo.ai
+DOMAIN,api.leonardo.ai
+DOMAIN,cdn.leonardo.ai
+
+# >> Stability AI
+DOMAIN-SUFFIX,stability.ai
+DOMAIN,api.stability.ai
+DOMAIN,platform.stability.ai
+
+# >> HeyGen
+DOMAIN-SUFFIX,heygen.com
+DOMAIN,api.heygen.com
+DOMAIN,app.heygen.com
+
+# >> Pika
+DOMAIN-SUFFIX,pika.art
+DOMAIN-SUFFIX,pika.labs
+DOMAIN,api.pika.art
+
+# >> Gamma
+DOMAIN-SUFFIX,gamma.app
+DOMAIN,api.gamma.app
+
+# >> Notion AI
+DOMAIN-SUFFIX,notion.so
+DOMAIN,api.notion.so
+
+# >> Grammarly
+DOMAIN-SUFFIX,grammarly.com
+DOMAIN,api.grammarly.com
+
+# >> Sourcegraph Cody
+DOMAIN-SUFFIX,sourcegraph.com
+DOMAIN,sourcegraph.com
+DOMAIN,api.sourcegraph.com
+
+# >> Tabnine
+DOMAIN-SUFFIX,tabnine.com
+DOMAIN,api.tabnine.com
+
+# >> Continue (AI Code Assistant)
+DOMAIN-SUFFIX,continue.dev
+
+# >> Azure OpenAI Service
+DOMAIN,openai.azure.com
+DOMAIN-SUFFIX,openai.azure.com
+DOMAIN,aoai.azure.com
+
+# >> Together AI
+DOMAIN-SUFFIX,together.xyz
+DOMAIN,api.together.xyz
+
+# >> Fireworks AI
+DOMAIN-SUFFIX,fireworks.ai
+DOMAIN,api.fireworks.ai
+DOMAIN,fireworks.ai
+
+# >> AI21 Labs
+DOMAIN-SUFFIX,ai21.com
+DOMAIN,api.ai21.com
+
+# >> AssemblyAI
+DOMAIN-SUFFIX,assemblyai.com
+DOMAIN,api.assemblyai.com
+
+# >> Nvidia NIM
+DOMAIN-SUFFIX,nvidia.com
+DOMAIN,integrate.api.nvidia.com
+DOMAIN,api.nvcf.nvidia.com
+
+# >> Vercel AI SDK / v0
+DOMAIN-SUFFIX,vercel.com
+DOMAIN,ai-sdk.vercel.app
+DOMAIN,v0.dev
+
+# >> Bolt.new
+DOMAIN-SUFFIX,bolt.new
+DOMAIN,api.bolt.new
+
+# >> Lovable.dev
+DOMAIN-SUFFIX,lovable.dev
+
+# >> CodeRabbit
+DOMAIN-SUFFIX,coderabbit.ai
+DOMAIN,api.coderabbit.ai
+
+# >> Pi (Inflection)
+DOMAIN-SUFFIX,inflection.ai
+DOMAIN,api.inflection.ai
+DOMAIN,pi.ai
+DOMAIN,heypi.com
+
+# >> ChatPDF
+DOMAIN-SUFFIX,chatpdf.com
