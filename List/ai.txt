@@ -351,6 +351,10 @@ DOMAIN,heypi.com
 # >> ChatPDF
 DOMAIN-SUFFIX,chatpdf.com
 
+# >> OpenCode / OpenCode Zen / OpenCode Go
+DOMAIN-SUFFIX,opencode.ai
+DOMAIN-SUFFIX,models.dev
+
 # >> OpenCode Optional
 DOMAIN-SUFFIX,anoma.ly
 
