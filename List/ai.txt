@@ -350,3 +350,13 @@ DOMAIN,heypi.com
 
 # >> ChatPDF
 DOMAIN-SUFFIX,chatpdf.com
+
+# >> OpenCode Optional
+DOMAIN-SUFFIX,anoma.ly
+
+# OpenCode 安装与版本更新（GitHub）
+DOMAIN,github.com
+DOMAIN,api.github.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,release-assets.githubusercontent.com
